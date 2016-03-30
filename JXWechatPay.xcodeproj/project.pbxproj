@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71E1E4611CAC27EE00043195 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E1E4601CAC27EE00043195 /* main.m */; };
+		71E1E4641CAC27EE00043195 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E1E4631CAC27EE00043195 /* AppDelegate.m */; };
+		71E1E4671CAC27EE00043195 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E1E4661CAC27EE00043195 /* ViewController.m */; };
+		71E1E46A1CAC27EE00043195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E1E4681CAC27EE00043195 /* Main.storyboard */; };
+		71E1E46C1CAC27EE00043195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E1E46B1CAC27EE00043195 /* Assets.xcassets */; };
+		71E1E46F1CAC27EE00043195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E1E46D1CAC27EE00043195 /* LaunchScreen.storyboard */; };
+		71E1E47A1CAC27EE00043195 /* JXWechatPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E1E4791CAC27EE00043195 /* JXWechatPayTests.m */; };
+		71E1E4851CAC27EE00043195 /* JXWechatPayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E1E4841CAC27EE00043195 /* JXWechatPayUITests.m */; };
+		71E1E4991CAC282100043195 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E1E4941CAC282100043195 /* libWeChatSDK.a */; };
+		71E1E49A1CAC282100043195 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 71E1E4951CAC282100043195 /* read_me.txt */; };
+		71E1E49E1CAC283100043195 /* JXWechatPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E1E49D1CAC283100043195 /* JXWechatPayManager.m */; };
+		71E1E4A11CAC285600043195 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E1E4A01CAC285600043195 /* SystemConfiguration.framework */; };
+		71E1E4A31CAC285C00043195 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E1E4A21CAC285C00043195 /* CoreTelephony.framework */; };
+		71E1E4A51CAC286300043195 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E1E4A41CAC286300043195 /* libz.tbd */; };
+		71E1E4A71CAC286B00043195 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E1E4A61CAC286B00043195 /* libsqlite3.0.tbd */; };
+		71E1E4A91CAC287200043195 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E1E4A81CAC287200043195 /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71E1E4761CAC27EE00043195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71E1E4541CAC27EE00043195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71E1E45B1CAC27EE00043195;
+			remoteInfo = JXWechatPay;
+		};
+		71E1E4811CAC27EE00043195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71E1E4541CAC27EE00043195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71E1E45B1CAC27EE00043195;
+			remoteInfo = JXWechatPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71E1E45C1CAC27EE00043195 /* JXWechatPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXWechatPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E1E4601CAC27EE00043195 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71E1E4621CAC27EE00043195 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		71E1E4631CAC27EE00043195 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		71E1E4651CAC27EE00043195 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		71E1E4661CAC27EE00043195 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		71E1E4691CAC27EE00043195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71E1E46B1CAC27EE00043195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71E1E46E1CAC27EE00043195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71E1E4701CAC27EE00043195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E1E4751CAC27EE00043195 /* JXWechatPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXWechatPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E1E4791CAC27EE00043195 /* JXWechatPayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXWechatPayTests.m; sourceTree = "<group>"; };
+		71E1E47B1CAC27EE00043195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E1E4801CAC27EE00043195 /* JXWechatPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXWechatPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E1E4841CAC27EE00043195 /* JXWechatPayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXWechatPayUITests.m; sourceTree = "<group>"; };
+		71E1E4861CAC27EE00043195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E1E4941CAC282100043195 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		71E1E4951CAC282100043195 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		71E1E4961CAC282100043195 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		71E1E4971CAC282100043195 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		71E1E4981CAC282100043195 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		71E1E49C1CAC283100043195 /* JXWechatPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXWechatPayManager.h; sourceTree = "<group>"; };
+		71E1E49D1CAC283100043195 /* JXWechatPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXWechatPayManager.m; sourceTree = "<group>"; };
+		71E1E4A01CAC285600043195 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		71E1E4A21CAC285C00043195 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		71E1E4A41CAC286300043195 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		71E1E4A61CAC286B00043195 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		71E1E4A81CAC287200043195 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71E1E4591CAC27EE00043195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E1E4A91CAC287200043195 /* libc++.tbd in Frameworks */,
+				71E1E4A71CAC286B00043195 /* libsqlite3.0.tbd in Frameworks */,
+				71E1E4A51CAC286300043195 /* libz.tbd in Frameworks */,
+				71E1E4A31CAC285C00043195 /* CoreTelephony.framework in Frameworks */,
+				71E1E4A11CAC285600043195 /* SystemConfiguration.framework in Frameworks */,
+				71E1E4991CAC282100043195 /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E1E4721CAC27EE00043195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E1E47D1CAC27EE00043195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71E1E4531CAC27EE00043195 = {
+			isa = PBXGroup;
+			children = (
+				71E1E45E1CAC27EE00043195 /* JXWechatPay */,
+				71E1E4781CAC27EE00043195 /* JXWechatPayTests */,
+				71E1E4831CAC27EE00043195 /* JXWechatPayUITests */,
+				71E1E45D1CAC27EE00043195 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71E1E45D1CAC27EE00043195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E45C1CAC27EE00043195 /* JXWechatPay.app */,
+				71E1E4751CAC27EE00043195 /* JXWechatPayTests.xctest */,
+				71E1E4801CAC27EE00043195 /* JXWechatPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71E1E45E1CAC27EE00043195 /* JXWechatPay */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E49F1CAC283900043195 /* frameworks */,
+				71E1E4921CAC282100043195 /* libs */,
+				71E1E49B1CAC283100043195 /* JXWechatPayManager */,
+				71E1E4621CAC27EE00043195 /* AppDelegate.h */,
+				71E1E4631CAC27EE00043195 /* AppDelegate.m */,
+				71E1E4651CAC27EE00043195 /* ViewController.h */,
+				71E1E4661CAC27EE00043195 /* ViewController.m */,
+				71E1E4681CAC27EE00043195 /* Main.storyboard */,
+				71E1E46B1CAC27EE00043195 /* Assets.xcassets */,
+				71E1E46D1CAC27EE00043195 /* LaunchScreen.storyboard */,
+				71E1E4701CAC27EE00043195 /* Info.plist */,
+				71E1E45F1CAC27EE00043195 /* Supporting Files */,
+			);
+			path = JXWechatPay;
+			sourceTree = "<group>";
+		};
+		71E1E45F1CAC27EE00043195 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E4601CAC27EE00043195 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71E1E4781CAC27EE00043195 /* JXWechatPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E4791CAC27EE00043195 /* JXWechatPayTests.m */,
+				71E1E47B1CAC27EE00043195 /* Info.plist */,
+			);
+			path = JXWechatPayTests;
+			sourceTree = "<group>";
+		};
+		71E1E4831CAC27EE00043195 /* JXWechatPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E4841CAC27EE00043195 /* JXWechatPayUITests.m */,
+				71E1E4861CAC27EE00043195 /* Info.plist */,
+			);
+			path = JXWechatPayUITests;
+			sourceTree = "<group>";
+		};
+		71E1E4921CAC282100043195 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E4931CAC282100043195 /* SDK1.6.2 */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		71E1E4931CAC282100043195 /* SDK1.6.2 */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E4941CAC282100043195 /* libWeChatSDK.a */,
+				71E1E4951CAC282100043195 /* read_me.txt */,
+				71E1E4961CAC282100043195 /* WechatAuthSDK.h */,
+				71E1E4971CAC282100043195 /* WXApi.h */,
+				71E1E4981CAC282100043195 /* WXApiObject.h */,
+			);
+			path = SDK1.6.2;
+			sourceTree = "<group>";
+		};
+		71E1E49B1CAC283100043195 /* JXWechatPayManager */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E49C1CAC283100043195 /* JXWechatPayManager.h */,
+				71E1E49D1CAC283100043195 /* JXWechatPayManager.m */,
+			);
+			path = JXWechatPayManager;
+			sourceTree = "<group>";
+		};
+		71E1E49F1CAC283900043195 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71E1E4A81CAC287200043195 /* libc++.tbd */,
+				71E1E4A61CAC286B00043195 /* libsqlite3.0.tbd */,
+				71E1E4A41CAC286300043195 /* libz.tbd */,
+				71E1E4A21CAC285C00043195 /* CoreTelephony.framework */,
+				71E1E4A01CAC285600043195 /* SystemConfiguration.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71E1E45B1CAC27EE00043195 /* JXWechatPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71E1E4891CAC27EE00043195 /* Build configuration list for PBXNativeTarget "JXWechatPay" */;
+			buildPhases = (
+				71E1E4581CAC27EE00043195 /* Sources */,
+				71E1E4591CAC27EE00043195 /* Frameworks */,
+				71E1E45A1CAC27EE00043195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXWechatPay;
+			productName = JXWechatPay;
+			productReference = 71E1E45C1CAC27EE00043195 /* JXWechatPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71E1E4741CAC27EE00043195 /* JXWechatPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71E1E48C1CAC27EE00043195 /* Build configuration list for PBXNativeTarget "JXWechatPayTests" */;
+			buildPhases = (
+				71E1E4711CAC27EE00043195 /* Sources */,
+				71E1E4721CAC27EE00043195 /* Frameworks */,
+				71E1E4731CAC27EE00043195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71E1E4771CAC27EE00043195 /* PBXTargetDependency */,
+			);
+			name = JXWechatPayTests;
+			productName = JXWechatPayTests;
+			productReference = 71E1E4751CAC27EE00043195 /* JXWechatPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71E1E47F1CAC27EE00043195 /* JXWechatPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71E1E48F1CAC27EE00043195 /* Build configuration list for PBXNativeTarget "JXWechatPayUITests" */;
+			buildPhases = (
+				71E1E47C1CAC27EE00043195 /* Sources */,
+				71E1E47D1CAC27EE00043195 /* Frameworks */,
+				71E1E47E1CAC27EE00043195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71E1E4821CAC27EE00043195 /* PBXTargetDependency */,
+			);
+			name = JXWechatPayUITests;
+			productName = JXWechatPayUITests;
+			productReference = 71E1E4801CAC27EE00043195 /* JXWechatPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71E1E4541CAC27EE00043195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = shiba_iosJX;
+				TargetAttributes = {
+					71E1E45B1CAC27EE00043195 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					71E1E4741CAC27EE00043195 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 71E1E45B1CAC27EE00043195;
+					};
+					71E1E47F1CAC27EE00043195 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 71E1E45B1CAC27EE00043195;
+					};
+				};
+			};
+			buildConfigurationList = 71E1E4571CAC27EE00043195 /* Build configuration list for PBXProject "JXWechatPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71E1E4531CAC27EE00043195;
+			productRefGroup = 71E1E45D1CAC27EE00043195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71E1E45B1CAC27EE00043195 /* JXWechatPay */,
+				71E1E4741CAC27EE00043195 /* JXWechatPayTests */,
+				71E1E47F1CAC27EE00043195 /* JXWechatPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71E1E45A1CAC27EE00043195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E1E46F1CAC27EE00043195 /* LaunchScreen.storyboard in Resources */,
+				71E1E46C1CAC27EE00043195 /* Assets.xcassets in Resources */,
+				71E1E49A1CAC282100043195 /* read_me.txt in Resources */,
+				71E1E46A1CAC27EE00043195 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E1E4731CAC27EE00043195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E1E47E1CAC27EE00043195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71E1E4581CAC27EE00043195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E1E4671CAC27EE00043195 /* ViewController.m in Sources */,
+				71E1E4641CAC27EE00043195 /* AppDelegate.m in Sources */,
+				71E1E49E1CAC283100043195 /* JXWechatPayManager.m in Sources */,
+				71E1E4611CAC27EE00043195 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E1E4711CAC27EE00043195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E1E47A1CAC27EE00043195 /* JXWechatPayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E1E47C1CAC27EE00043195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E1E4851CAC27EE00043195 /* JXWechatPayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71E1E4771CAC27EE00043195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71E1E45B1CAC27EE00043195 /* JXWechatPay */;
+			targetProxy = 71E1E4761CAC27EE00043195 /* PBXContainerItemProxy */;
+		};
+		71E1E4821CAC27EE00043195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71E1E45B1CAC27EE00043195 /* JXWechatPay */;
+			targetProxy = 71E1E4811CAC27EE00043195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71E1E4681CAC27EE00043195 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71E1E4691CAC27EE00043195 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71E1E46D1CAC27EE00043195 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71E1E46E1CAC27EE00043195 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71E1E4871CAC27EE00043195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		71E1E4881CAC27EE00043195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71E1E48A1CAC27EE00043195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXWechatPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JXWechatPay/libs/SDK1.6.2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shiba-iosJX.JXWechatPay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71E1E48B1CAC27EE00043195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JXWechatPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JXWechatPay/libs/SDK1.6.2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "shiba-iosJX.JXWechatPay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71E1E48D1CAC27EE00043195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JXWechatPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shiba-iosJX.JXWechatPayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXWechatPay.app/JXWechatPay";
+			};
+			name = Debug;
+		};
+		71E1E48E1CAC27EE00043195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JXWechatPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shiba-iosJX.JXWechatPayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXWechatPay.app/JXWechatPay";
+			};
+			name = Release;
+		};
+		71E1E4901CAC27EE00043195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JXWechatPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shiba-iosJX.JXWechatPayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JXWechatPay;
+			};
+			name = Debug;
+		};
+		71E1E4911CAC27EE00043195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JXWechatPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shiba-iosJX.JXWechatPayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JXWechatPay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71E1E4571CAC27EE00043195 /* Build configuration list for PBXProject "JXWechatPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E1E4871CAC27EE00043195 /* Debug */,
+				71E1E4881CAC27EE00043195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71E1E4891CAC27EE00043195 /* Build configuration list for PBXNativeTarget "JXWechatPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E1E48A1CAC27EE00043195 /* Debug */,
+				71E1E48B1CAC27EE00043195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71E1E48C1CAC27EE00043195 /* Build configuration list for PBXNativeTarget "JXWechatPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E1E48D1CAC27EE00043195 /* Debug */,
+				71E1E48E1CAC27EE00043195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71E1E48F1CAC27EE00043195 /* Build configuration list for PBXNativeTarget "JXWechatPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E1E4901CAC27EE00043195 /* Debug */,
+				71E1E4911CAC27EE00043195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71E1E4541CAC27EE00043195 /* Project object */;
+}
