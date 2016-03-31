@@ -35,7 +35,8 @@
             if(dicPay) {
                 NSMutableString *retcode = [dicPay objectForKey:@"retcode"];
                 if (retcode.intValue == 0) {
-                    //以上所有代码为得到支付的以下6个参数(实际开发以后由后台生成)
+                    
+                    //以上所有代码为得到支付的以下6个参数(实际开发由后台生成)
                     PayReq* req             = [[PayReq alloc] init];
                     req.partnerId           = [dicPay objectForKey:@"partnerid"];
                     req.prepayId            = [dicPay objectForKey:@"prepayid"];
@@ -43,6 +44,8 @@
                     req.timeStamp           = [[dicPay objectForKey:@"timestamp"] intValue];
                     req.package             = [dicPay objectForKey:@"package"];
                     req.sign                = [dicPay objectForKey:@"sign"];
+                    
+                    //支付只要调起这个方法即可
                     [[JXWechatPayManager shareManager] jx_payWechat:req callBack:^(JXWechatPayResult result) {
                         switch (result) {
                             case JXWechatPaySuccess:
@@ -67,7 +70,16 @@
                             } break;
                         }
                     }];
-                    NSLog(@"appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@",[dicPay objectForKey:@"appid"],req.partnerId,req.prepayId,req.nonceStr,(long)req.timeStamp,req.package,req.sign );
+                    
+                    //调试日志
+                    NSLog(@"appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@",
+                          [dicPay objectForKey:@"appid"],
+                          req.partnerId,
+                          req.prepayId,
+                          req.nonceStr,
+                          (long)req.timeStamp,
+                          req.package,
+                          req.sign );
                 }
                 else {
                     
