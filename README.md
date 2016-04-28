@@ -1,10 +1,10 @@
 
 <p align="center" >
-  <img src="https://github.com/augsun/JXRollView/blob/master/JXRollView/Assets.xcassets/AppIcon.appiconset/JXRollView_180.png" alt="JXRollView" title="JXRollView">
+<img src="https://raw.githubusercontent.com/augsun/JXWechatPay/master/JXWechatPay/Assets.xcassets/AppIcon.appiconset/JXWechatPay_180.png" alt="JXWechatPay" title="JXWechatPay">
 </p>
 
 <p align="center" >
-The easiest way to create an infinite loop scroll view.
+WeChat payment manager.
 </p>
 
 [![Twitter](https://img.shields.io/badge/twitter-@jianxingangel-blue.svg?style=flat-square)](http://twitter.com/jianxingangel)
