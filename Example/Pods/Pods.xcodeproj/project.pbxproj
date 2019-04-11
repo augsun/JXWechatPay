@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		207DFD0A4A40F7A568ACE415B6FF2407 /* WechatOpenSDK */ = {
+		642DF439CD4F3B470DC22BA10C8ABF93 /* WechatOpenSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = D7F914846624DA800E97B07034619276 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */;
+			buildConfigurationList = 773A222ECB837342296C5DEDB8093D68 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -19,10 +19,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1CC296BD74ADC9538F5EC0CAB882098F /* JXWechatPay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CC982A0E094AA1A4A3DE68FF10C66E /* JXWechatPay-dummy.m */; };
+		3B2888DD1ECB43750A12FE690263A474 /* JXWechatPay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEA12F479298A3FD1429F9B815CC954 /* JXWechatPay-dummy.m */; };
 		5F502C6C0F7B4641F3F7A6C0DFD2CBCA /* Pods-JXWechatPay_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444DDAB2D7A225D90130E51AFD85DBE /* Pods-JXWechatPay_Example-dummy.m */; };
-		80A0CE19348FA14E6BA564C2FFCF3B71 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 29422CE66A8F2206B8CC461C7A45C4DD /* ReplaceMe.m */; };
+		92AA3CA29BD4128D2765ECA9CA803431 /* JXWechatPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9576F0C9F07D1EF53879BF7FC7C15E /* JXWechatPayManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A66B0E31DB5A434CFDB4C170F362E4AA /* Pods-JXWechatPay_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B374E38E85D5EE1DC25A08A30E133327 /* Pods-JXWechatPay_Tests-dummy.m */; };
+		C860411EAC6CFB9C24D651AFEE9648B5 /* JXWechatPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434C00FEED2CF2EA944FE8F9578D4F5 /* JXWechatPayManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 207DFD0A4A40F7A568ACE415B6FF2407;
+			remoteGlobalIDString = 642DF439CD4F3B470DC22BA10C8ABF93;
+			remoteInfo = WechatOpenSDK;
+		};
+		48CB533FD6FEA854AB4A311C7B394B51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 642DF439CD4F3B470DC22BA10C8ABF93;
 			remoteInfo = WechatOpenSDK;
 		};
 		79B80367A9A95B2B37FF756D0554B629 /* PBXContainerItemProxy */ = {
@@ -40,33 +48,23 @@
 			remoteGlobalIDString = 0580708A22C1134EF37C7A3E271CD15C;
 			remoteInfo = "Pods-JXWechatPay_Example";
 		};
-		B5E3D4B8456EAC3A79ADE1EA8215AC82 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 207DFD0A4A40F7A568ACE415B6FF2407;
-			remoteInfo = WechatOpenSDK;
-		};
 		FC70449B34E321623A02DF0DEB4A38F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 885C8F1B294074D8089475A83C1FB6D7;
+			remoteGlobalIDString = E7ED2B52AE704B674C39B0E11E7FC16A;
 			remoteInfo = JXWechatPay;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B6F580D4D1561B9D95938E4D6627FD3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		16CC982A0E094AA1A4A3DE68FF10C66E /* JXWechatPay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXWechatPay-dummy.m"; sourceTree = "<group>"; };
 		1B3D9CBD9567E1D242AD9FADC4D60861 /* Pods-JXWechatPay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JXWechatPay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2368B451BBDB658DB837F07A5FC26F7F /* Pods-JXWechatPay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JXWechatPay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		27D9B69ED26E380616D2C0E20B4AED99 /* Pods-JXWechatPay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JXWechatPay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		28278A9E4260F6B2D58B35F491C95FAD /* libPods-JXWechatPay_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JXWechatPay_Example.a"; path = "libPods-JXWechatPay_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		29422CE66A8F2206B8CC461C7A45C4DD /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = JXWechatPay/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		287BB88A166733E38F85032ABB74DDCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		2DC7CD7C45EA0E5E00845EC709BA7966 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = WeChatSDK1.8.4/WXApi.h; sourceTree = "<group>"; };
-		36CBF58158C3C41B3AB4948A90AED9AC /* JXWechatPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JXWechatPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		48A4BA75D7055D4E36CD36E1235E4DA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3434C00FEED2CF2EA944FE8F9578D4F5 /* JXWechatPayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXWechatPayManager.m; path = JXWechatPay/Classes/JXWechatPayManager.m; sourceTree = "<group>"; };
 		4B65B872FD46967BDC0874B0D73F6F44 /* Pods-JXWechatPay_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXWechatPay_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4FFD9056224350697445B91F3B0D689D /* Pods-JXWechatPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXWechatPay_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6444DDAB2D7A225D90130E51AFD85DBE /* Pods-JXWechatPay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JXWechatPay_Example-dummy.m"; sourceTree = "<group>"; };
@@ -74,15 +72,19 @@
 		7420450A4301CCEFDB118C3C04A43933 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = WeChatSDK1.8.4/WXApiObject.h; sourceTree = "<group>"; };
 		7433F39918993F313BA7D5DA9DA83BFC /* Pods-JXWechatPay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXWechatPay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		95F66A730ADE19511992534D9FE96139 /* libJXWechatPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJXWechatPay.a; path = libJXWechatPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ADB5D4599158ABD98E18F417FE3FB24 /* JXWechatPay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXWechatPay.xcconfig; sourceTree = "<group>"; };
+		9CC8F4E07E91E12685C291ED870A6D39 /* JXWechatPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXWechatPay-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A229BCD517AFF0E52E109E0B915057D6 /* JXWechatPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JXWechatPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AF9329D7ED54EDB15A0FDC44452FAA98 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = WeChatSDK1.8.4/WechatAuthSDK.h; sourceTree = "<group>"; };
 		B374E38E85D5EE1DC25A08A30E133327 /* Pods-JXWechatPay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JXWechatPay_Tests-dummy.m"; sourceTree = "<group>"; };
+		B696261FD0F212EC815C86B08F5DD2D5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BB9576F0C9F07D1EF53879BF7FC7C15E /* JXWechatPayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXWechatPayManager.h; path = JXWechatPay/Classes/JXWechatPayManager.h; sourceTree = "<group>"; };
 		BEA9AD3DB31E29FA1FFE755CB4BEE162 /* Pods-JXWechatPay_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JXWechatPay_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C53205D92CF1727CBEC847139DB3B496 /* JXWechatPay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXWechatPay.xcconfig; sourceTree = "<group>"; };
 		CD367ED153FD30B480D6CADBC2F62D50 /* Pods-JXWechatPay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXWechatPay_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D65C6B8C628931039DF12EC4E37E261C /* libPods-JXWechatPay_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JXWechatPay_Tests.a"; path = "libPods-JXWechatPay_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEA12F479298A3FD1429F9B815CC954 /* JXWechatPay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXWechatPay-dummy.m"; sourceTree = "<group>"; };
 		F3CE61381E500927A41E830B1DCF0507 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = WeChatSDK1.8.4/libWeChatSDK.a; sourceTree = "<group>"; };
-		FF100B868DC5DFFD98E18B9B2FD7F0B1 /* JXWechatPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXWechatPay-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5E4CCCF00A7AA240A87498215D60B8C /* Frameworks */ = {
+		CB018378DD211573F844CB98CF59A143 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -110,14 +112,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28C71B9817C2FED564094D7AED5AE8A5 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D6E54BD20C668DDB8BF582C7EADA11AF /* JXWechatPay */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		368F709C619C0101BC58E1FB3667E06C /* Pods-JXWechatPay_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +125,18 @@
 			path = "Target Support Files/Pods-JXWechatPay_Example";
 			sourceTree = "<group>";
 		};
+		3BA42A1A59FB7E48B457DB41890AE5A8 /* JXWechatPay */ = {
+			isa = PBXGroup;
+			children = (
+				BB9576F0C9F07D1EF53879BF7FC7C15E /* JXWechatPayManager.h */,
+				3434C00FEED2CF2EA944FE8F9578D4F5 /* JXWechatPayManager.m */,
+				B3AD9A11BE11BA103E1DA658EAF1C164 /* Pod */,
+				C2A5F7C264F2BC3BEA47B1E850647219 /* Support Files */,
+			);
+			name = JXWechatPay;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		52C06D29DE8A74D8B72B83758947D95F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,14 +145,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5C22D42C6031717ED6676AF443A47261 /* Pod */ = {
+		71CDD92EFACD1893B877F4F49C590195 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				36CBF58158C3C41B3AB4948A90AED9AC /* JXWechatPay.podspec */,
-				48A4BA75D7055D4E36CD36E1235E4DA9 /* LICENSE */,
-				0B6F580D4D1561B9D95938E4D6627FD3 /* README.md */,
+				3BA42A1A59FB7E48B457DB41890AE5A8 /* JXWechatPay */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		92915D34C474D243092245B1A887CEC8 /* Targets Support Files */ = {
@@ -180,38 +184,37 @@
 			path = "../Target Support Files/WechatOpenSDK";
 			sourceTree = "<group>";
 		};
-		CF1408CF629C7361332E53B88F7BD30C = {
+		B3AD9A11BE11BA103E1DA658EAF1C164 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				28C71B9817C2FED564094D7AED5AE8A5 /* Development Pods */,
-				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				52C06D29DE8A74D8B72B83758947D95F /* Pods */,
-				DFF88A62DF3ECDC6F5250DCFCDC549B5 /* Products */,
-				92915D34C474D243092245B1A887CEC8 /* Targets Support Files */,
+				A229BCD517AFF0E52E109E0B915057D6 /* JXWechatPay.podspec */,
+				287BB88A166733E38F85032ABB74DDCE /* LICENSE */,
+				B696261FD0F212EC815C86B08F5DD2D5 /* README.md */,
 			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		D035B6EDDD067CAA6202E4FC350647F2 /* Support Files */ = {
+		C2A5F7C264F2BC3BEA47B1E850647219 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C53205D92CF1727CBEC847139DB3B496 /* JXWechatPay.xcconfig */,
-				16CC982A0E094AA1A4A3DE68FF10C66E /* JXWechatPay-dummy.m */,
-				FF100B868DC5DFFD98E18B9B2FD7F0B1 /* JXWechatPay-prefix.pch */,
+				9ADB5D4599158ABD98E18F417FE3FB24 /* JXWechatPay.xcconfig */,
+				DAEA12F479298A3FD1429F9B815CC954 /* JXWechatPay-dummy.m */,
+				9CC8F4E07E91E12685C291ED870A6D39 /* JXWechatPay-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/JXWechatPay";
 			sourceTree = "<group>";
 		};
-		D6E54BD20C668DDB8BF582C7EADA11AF /* JXWechatPay */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				29422CE66A8F2206B8CC461C7A45C4DD /* ReplaceMe.m */,
-				5C22D42C6031717ED6676AF443A47261 /* Pod */,
-				D035B6EDDD067CAA6202E4FC350647F2 /* Support Files */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				71CDD92EFACD1893B877F4F49C590195 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				52C06D29DE8A74D8B72B83758947D95F /* Pods */,
+				DFF88A62DF3ECDC6F5250DCFCDC549B5 /* Products */,
+				92915D34C474D243092245B1A887CEC8 /* Targets Support Files */,
 			);
-			name = JXWechatPay;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -255,10 +258,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B831481F986D91E1DEEDC138EC5DD178 /* Headers */ = {
+		67900D2B06CDEDE8EFD5BC2AA325FCB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AA3CA29BD4128D2765ECA9CA803431 /* JXWechatPayManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,24 +302,6 @@
 			productReference = 28278A9E4260F6B2D58B35F491C95FAD /* libPods-JXWechatPay_Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		885C8F1B294074D8089475A83C1FB6D7 /* JXWechatPay */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4AC219938080FF93BDBA421136558C26 /* Build configuration list for PBXNativeTarget "JXWechatPay" */;
-			buildPhases = (
-				B831481F986D91E1DEEDC138EC5DD178 /* Headers */,
-				6D5CA0281F91F97B175290F4EE6C3EFC /* Sources */,
-				C5E4CCCF00A7AA240A87498215D60B8C /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A5DD46C024ACDE4D81143B0691EEAC71 /* PBXTargetDependency */,
-			);
-			name = JXWechatPay;
-			productName = JXWechatPay;
-			productReference = 95F66A730ADE19511992534D9FE96139 /* libJXWechatPay.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		AFAAFF581D8EEE40F6801490925F33D6 /* Pods-JXWechatPay_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4893EF8B3BEEAEABAA5733309C2EBC0A /* Build configuration list for PBXNativeTarget "Pods-JXWechatPay_Tests" */;
@@ -332,6 +318,24 @@
 			name = "Pods-JXWechatPay_Tests";
 			productName = "Pods-JXWechatPay_Tests";
 			productReference = D65C6B8C628931039DF12EC4E37E261C /* libPods-JXWechatPay_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E7ED2B52AE704B674C39B0E11E7FC16A /* JXWechatPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 193CB69945D557CB4D4403C71DA132C7 /* Build configuration list for PBXNativeTarget "JXWechatPay" */;
+			buildPhases = (
+				67900D2B06CDEDE8EFD5BC2AA325FCB4 /* Headers */,
+				6B141533E1A64952FE10008A4A47AEDF /* Sources */,
+				CB018378DD211573F844CB98CF59A143 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DDFC80FD05E5E92BA2F1DD6901E7996 /* PBXTargetDependency */,
+			);
+			name = JXWechatPay;
+			productName = JXWechatPay;
+			productReference = 95F66A730ADE19511992534D9FE96139 /* libJXWechatPay.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -355,21 +359,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				885C8F1B294074D8089475A83C1FB6D7 /* JXWechatPay */,
+				E7ED2B52AE704B674C39B0E11E7FC16A /* JXWechatPay */,
 				0580708A22C1134EF37C7A3E271CD15C /* Pods-JXWechatPay_Example */,
 				AFAAFF581D8EEE40F6801490925F33D6 /* Pods-JXWechatPay_Tests */,
-				207DFD0A4A40F7A568ACE415B6FF2407 /* WechatOpenSDK */,
+				642DF439CD4F3B470DC22BA10C8ABF93 /* WechatOpenSDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6D5CA0281F91F97B175290F4EE6C3EFC /* Sources */ = {
+		6B141533E1A64952FE10008A4A47AEDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CC296BD74ADC9538F5EC0CAB882098F /* JXWechatPay-dummy.m in Sources */,
-				80A0CE19348FA14E6BA564C2FFCF3B71 /* ReplaceMe.m in Sources */,
+				3B2888DD1ECB43750A12FE690263A474 /* JXWechatPay-dummy.m in Sources */,
+				C860411EAC6CFB9C24D651AFEE9648B5 /* JXWechatPayManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,17 +396,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8DDFC80FD05E5E92BA2F1DD6901E7996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WechatOpenSDK;
+			target = 642DF439CD4F3B470DC22BA10C8ABF93 /* WechatOpenSDK */;
+			targetProxy = 48CB533FD6FEA854AB4A311C7B394B51 /* PBXContainerItemProxy */;
+		};
 		9F4B90F60654A8BAAE92162233537B14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WechatOpenSDK;
-			target = 207DFD0A4A40F7A568ACE415B6FF2407 /* WechatOpenSDK */;
+			target = 642DF439CD4F3B470DC22BA10C8ABF93 /* WechatOpenSDK */;
 			targetProxy = 312B10A4642D45DC30C667C7EAE0DD39 /* PBXContainerItemProxy */;
-		};
-		A5DD46C024ACDE4D81143B0691EEAC71 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WechatOpenSDK;
-			target = 207DFD0A4A40F7A568ACE415B6FF2407 /* WechatOpenSDK */;
-			targetProxy = B5E3D4B8456EAC3A79ADE1EA8215AC82 /* PBXContainerItemProxy */;
 		};
 		B4FB312D17EA3D4EAEF89BF4BA034B09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -413,35 +417,12 @@
 		CE6205A07645FA6E7CF6EF6755D6C090 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JXWechatPay;
-			target = 885C8F1B294074D8089475A83C1FB6D7 /* JXWechatPay */;
+			target = E7ED2B52AE704B674C39B0E11E7FC16A /* JXWechatPay */;
 			targetProxy = FC70449B34E321623A02DF0DEB4A38F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		069B467AFF737C1CEEB813F87C04A179 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53205D92CF1727CBEC847139DB3B496 /* JXWechatPay.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JXWechatPay/JXWechatPay-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JXWechatPay;
-				PRODUCT_NAME = JXWechatPay;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		07488D4657FB0A78086563621D425F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -506,7 +487,30 @@
 			};
 			name = Debug;
 		};
-		2EEDEBEE32AE3B1A013F5FF58E554F68 /* Debug */ = {
+		14F02D9860BAD9B0EF599509B36B7AEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ADB5D4599158ABD98E18F417FE3FB24 /* JXWechatPay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JXWechatPay/JXWechatPay-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JXWechatPay;
+				PRODUCT_NAME = JXWechatPay;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		280A6D3D4780893368A26BA67A4EF3D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F7DC82E5B67817926DA021256040B52 /* WechatOpenSDK.xcconfig */;
 			buildSettings = {
@@ -561,6 +565,20 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		83924A8150B7ED858F63965C640DAB2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7DC82E5B67817926DA021256040B52 /* WechatOpenSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		9A1EBB36CBC8791734D7260E3D4627CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -644,23 +662,9 @@
 			};
 			name = Release;
 		};
-		CEA8A967777B8728227AEDE3B9168745 /* Release */ = {
+		E5C1D50EC1EC6EAD2E1D4E2FAC03D9BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F7DC82E5B67817926DA021256040B52 /* WechatOpenSDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DFDB720A1B4FD89D9AB62DB1611E7C49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C53205D92CF1727CBEC847139DB3B496 /* JXWechatPay.xcconfig */;
+			baseConfigurationReference = 9ADB5D4599158ABD98E18F417FE3FB24 /* JXWechatPay.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -706,6 +710,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		193CB69945D557CB4D4403C71DA132C7 /* Build configuration list for PBXNativeTarget "JXWechatPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F02D9860BAD9B0EF599509B36B7AEB /* Debug */,
+				E5C1D50EC1EC6EAD2E1D4E2FAC03D9BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -724,15 +737,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AC219938080FF93BDBA421136558C26 /* Build configuration list for PBXNativeTarget "JXWechatPay" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				069B467AFF737C1CEEB813F87C04A179 /* Debug */,
-				DFDB720A1B4FD89D9AB62DB1611E7C49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		642FD720B16DB94E00F2821F2EA5B9E3 /* Build configuration list for PBXNativeTarget "Pods-JXWechatPay_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -742,11 +746,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7F914846624DA800E97B07034619276 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */ = {
+		773A222ECB837342296C5DEDB8093D68 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EEDEBEE32AE3B1A013F5FF58E554F68 /* Debug */,
-				CEA8A967777B8728227AEDE3B9168745 /* Release */,
+				280A6D3D4780893368A26BA67A4EF3D1 /* Debug */,
+				83924A8150B7ED858F63965C640DAB2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

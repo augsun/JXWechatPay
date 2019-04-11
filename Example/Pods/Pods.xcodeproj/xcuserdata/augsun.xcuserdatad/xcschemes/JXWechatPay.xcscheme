@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "885C8F1B294074D8089475A83C1FB6D7"
+               BlueprintIdentifier = "E7ED2B52AE704B674C39B0E11E7FC16A"
                BuildableName = "libJXWechatPay.a"
                BlueprintName = "JXWechatPay"
                ReferencedContainer = "container:Pods.xcodeproj">

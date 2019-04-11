@@ -1,5 +1,5 @@
 PODS:
-  - JXWechatPay (0.1.0):
+  - JXWechatPay (1.0.3):
     - WechatOpenSDK (= 1.8.4)
   - WechatOpenSDK (1.8.4)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JXWechatPay: 7db7094c25293e802800b8b686c390282bf5f954
+  JXWechatPay: 05ab3da5a92c5662cd8808a9f96f20c2b9da95b8
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
 
 PODFILE CHECKSUM: d95e2690c871863fe01e433937c310053614d3cb

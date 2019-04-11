@@ -1,0 +1,1 @@
+../../../../../JXWechatPay/Classes/JXWechatPayManager.h
