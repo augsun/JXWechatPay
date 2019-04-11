@@ -1,0 +1,6 @@
+framework module Pods_JXWechatPay_Tests {
+  umbrella header "Pods-JXWechatPay_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

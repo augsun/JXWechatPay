@@ -1,0 +1,13 @@
+#use_frameworks!
+
+platform :ios, '9.0'
+
+target 'JXWechatPay_Example' do
+  pod 'JXWechatPay', :path => '../'
+  
+  target 'JXWechatPay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

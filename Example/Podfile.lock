@@ -1,0 +1,23 @@
+PODS:
+  - JXWechatPay (0.1.0):
+    - WechatOpenSDK (= 1.8.4)
+  - WechatOpenSDK (1.8.4)
+
+DEPENDENCIES:
+  - JXWechatPay (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - WechatOpenSDK
+
+EXTERNAL SOURCES:
+  JXWechatPay:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JXWechatPay: 378be55aa657ca6deb46ded0c695a1c7340122f7
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+
+PODFILE CHECKSUM: d95e2690c871863fe01e433937c310053614d3cb
+
+COCOAPODS: 1.6.1
