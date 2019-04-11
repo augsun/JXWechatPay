@@ -1,9 +1,9 @@
 //
 //  JXWechatPayManager.m
-//  mixc
+//  JXWechatPay
 //
 //  Created by augsun on 8/30/16.
-//  Copyright © 2016 crland. All rights reserved.
+//  Copyright © 2016 CoderSun. All rights reserved.
 //
 
 #import "JXWechatPayManager.h"
