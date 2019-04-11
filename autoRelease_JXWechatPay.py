@@ -87,7 +87,7 @@ def pod_repo_push():
     # os.system("pod repo push %s %s.podspec --allow-warnings --verbose" % (pod_Spec_Repo, proj_name))
 
     # github
-    os.system("pod trunk push %s.podspec --allow-warnings --verbose —user-libraries" % (proj_name))
+    os.system("pod trunk push %s.podspec --allow-warnings --verbose --use-libraries" % (proj_name))
 #
 def main():
     add_version()
