@@ -44,12 +44,12 @@ static JXWechatPayManager *singleton_;
     return [WXApi handleOpenURL:url delegate:[JXWechatPayManager sharedWechatPay]];
 }
 
-- (void)payReqDictionary:(NSDictionary *)payReqDictionary onRespCallBack:(void (^)(JXWechatPayResult, NSString * _Nonnull))onRespCallBack {
+- (void)payWithReqDic:(NSDictionary *)reqDic onRespCallBack:(void (^)(JXWechatPayResult, NSString * _Nonnull))onRespCallBack {
 
     _onRespCallBack = onRespCallBack;
 
-    if ([payReqDictionary.allKeys containsObject:@"appid"]) {
-        [WXApi registerApp:payReqDictionary[@"appid"]];
+    if ([reqDic.allKeys containsObject:@"appid"]) {
+        [WXApi registerApp:reqDic[@"appid"]];
     }
     else {
         !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayFailure, @"missing \"appid\".");
@@ -60,41 +60,41 @@ static JXWechatPayManager *singleton_;
         !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayNoAppInstalled, @"未安装微信");
     }
     else {
-        if (![payReqDictionary.allKeys containsObject:@"partnerid"]) {
+        if (![reqDic.allKeys containsObject:@"partnerid"]) {
             !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayFailure, @"missing \"partnerid\".");
             return;
         }
-        if (![payReqDictionary.allKeys containsObject:@"prepayid"]) {
+        if (![reqDic.allKeys containsObject:@"prepayid"]) {
             !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayFailure, @"missing \"prepayid\".");
             return;
         }
-        if (![payReqDictionary.allKeys containsObject:@"noncestr"]) {
+        if (![reqDic.allKeys containsObject:@"noncestr"]) {
             !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayFailure, @"missing \"noncestr\".");
             return;
         }
-        if (![payReqDictionary.allKeys containsObject:@"timestamp"]) {
+        if (![reqDic.allKeys containsObject:@"timestamp"]) {
             !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayFailure, @"missing \"timestamp\".");
             return;
         }
-        if (![payReqDictionary.allKeys containsObject:@"package"]) {
+        if (![reqDic.allKeys containsObject:@"package"]) {
             !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayFailure, @"missing \"package\".");
             return;
         }
-        if (![payReqDictionary.allKeys containsObject:@"sign"]) {
+        if (![reqDic.allKeys containsObject:@"sign"]) {
             !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayFailure, @"missing \"sign\".");
             return;
         }
         
         PayReq* req             = [[PayReq alloc] init];
-        req.partnerId           = payReqDictionary[@"partnerid"];
-        req.prepayId            = payReqDictionary[@"prepayid"];
-        req.nonceStr            = payReqDictionary[@"noncestr"];
+        req.partnerId           = reqDic[@"partnerid"];
+        req.prepayId            = reqDic[@"prepayid"];
+        req.nonceStr            = reqDic[@"noncestr"];
         
-        NSString *timestamp_string = [NSString stringWithFormat:@"%@", payReqDictionary[@"timestamp"]];
+        NSString *timestamp_string = [NSString stringWithFormat:@"%@", reqDic[@"timestamp"]];
         req.timeStamp           = (UInt32)[timestamp_string integerValue];
         
-        req.package             = payReqDictionary[@"package"];
-        req.sign                = payReqDictionary[@"sign"];
+        req.package             = reqDic[@"package"];
+        req.sign                = reqDic[@"sign"];
 
         [WXApi sendReq:req];
     }

@@ -18,6 +18,9 @@ typedef NS_ENUM(NSUInteger, JXWechatPayResult) {
     JXWechatPayFailure              ///< 支付失败
 };
 
+/**
+ 基于 WechatOpenSDK 1.8.4 版本封装.
+ */
 @interface JXWechatPayManager : NSObject
 
 + (JXWechatPayManager *)sharedWechatPay; ///< 单例
@@ -31,10 +34,10 @@ typedef NS_ENUM(NSUInteger, JXWechatPayResult) {
 /**
  调起微信支付
 
- @param payReqDictionary 支付参数 @{@"partnerid": xx, @"prepayid": xx, @"noncestr": xx, @"timestamp": xx, @"package": xx, @"sign": xx, @"appid": xx}, 前面 6 个参数必须传入, appid 最好传入
+ @param reqDic 支付参数 @{@"partnerid": xx, @"prepayid": xx, @"noncestr": xx, @"timestamp": xx, @"package": xx, @"sign": xx, @"appid": xx}, 前面 6 个参数必须传入, appid 最好传入
  @param onRespCallBack 支付结果回调
  */
-- (void)payReqDictionary:(NSDictionary *)payReqDictionary onRespCallBack:(void(^)(JXWechatPayResult result, NSString *msg))onRespCallBack;
+- (void)payWithReqDic:(NSDictionary *)reqDic onRespCallBack:(void(^)(JXWechatPayResult result, NSString *msg))onRespCallBack;
 
 @end
 
