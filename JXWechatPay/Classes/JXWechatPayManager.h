@@ -12,14 +12,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 支付结果 */
 typedef NS_ENUM(NSUInteger, JXWechatPayResult) {
-    JXWechatPaySuccess = 1,         ///< 支付成功
-    JXWechatPayNoAppInstalled,      ///< 没安装微信
-    JXWechatPayUserCancel,          ///< 用户取消
-    JXWechatPayFailure              ///< 支付失败
+    JXWechatPayResultSuccess = 1, ///< 支付成功
+    JXWechatPayResultNoAppInstalled, ///< 没安装微信
+    JXWechatPayResultUserCancel, ///< 用户取消
+    JXWechatPayResultFailure ///< 支付失败
 };
 
 /**
- 基于 WechatOpenSDK 1.8.4 版本封装.
+ 支付结果回调
+
+ @param result 支付结果
+ @param msg 结果消息
+ */
+typedef void (^JXWechatPayResultCallback)(JXWechatPayResult result, NSString *msg);
+
+/**
+ 基于 WechatOpenSDK (版本见 JXWechatPay.podspec 中的 s.dependency 'WechatOpenSDK', 'X.X.X') 封装.
  */
 @interface JXWechatPayManager : NSObject
 
@@ -34,9 +42,9 @@ typedef NS_ENUM(NSUInteger, JXWechatPayResult) {
  调起微信支付
 
  @param reqDic 支付参数 @{@"partnerid": xx, @"prepayid": xx, @"noncestr": xx, @"timestamp": xx, @"package": xx, @"sign": xx, @"appid": xx}, 前面 6 个参数必须传入, appid 最好传入
- @param onRespCallBack 支付结果回调
+ @param result 支付结果回调
  */
-- (void)payWithReqDic:(NSDictionary *)reqDic onRespCallBack:(void(^)(JXWechatPayResult result, NSString *msg))onRespCallBack;
+- (void)payWithReqDic:(NSDictionary *)reqDic result:(JXWechatPayResultCallback)result;
 
 @end
 

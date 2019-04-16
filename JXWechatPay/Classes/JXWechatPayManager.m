@@ -13,7 +13,7 @@
 
 @interface JXWechatPayManager () <WXApiDelegate>
 
-@property (nonatomic, copy) void(^onRespCallBack)(JXWechatPayResult result, NSString * _Nonnull msg);
+@property (nonatomic, copy) JXWechatPayResultCallback payResultCallback;
 
 @end
 
@@ -53,45 +53,47 @@ static JXWechatPayManager *singleton_;
     return ret;
 }
 
-- (void)payWithReqDic:(NSDictionary *)reqDic onRespCallBack:(void (^)(JXWechatPayResult, NSString * _Nonnull))onRespCallBack {
+- (void)payWithReqDic:(NSDictionary *)reqDic result:(nonnull JXWechatPayResultCallback)result {
 
-    _onRespCallBack = onRespCallBack;
+    self.payResultCallback = result;
 
     if ([reqDic.allKeys containsObject:@"appid"]) {
         [WXApi registerApp:reqDic[@"appid"]];
     }
 
     if (![WXApi isWXAppInstalled]) {
-        JX_BLOCK_EXEC(self.onRespCallBack, JXWechatPayNoAppInstalled, @"未安装微信");
+        JX_BLOCK_EXEC(self.payResultCallback, JXWechatPayResultNoAppInstalled, @"未安装微信");
         return;
     }
 
     //
+    NSString *failureMsg = nil;
     if (![reqDic.allKeys containsObject:@"partnerid"]) {
-        JX_BLOCK_EXEC(self.onRespCallBack, JXWechatPayFailure, @"missing \"partnerid\".");
-        return;
+        failureMsg = @"missing \"partnerid\".";
     }
-    if (![reqDic.allKeys containsObject:@"prepayid"]) {
-        JX_BLOCK_EXEC(self.onRespCallBack, JXWechatPayFailure, @"missing \"prepayid\".");
-        return;
+    else if (![reqDic.allKeys containsObject:@"prepayid"]) {
+        failureMsg = @"missing \"prepayid\".";
     }
-    if (![reqDic.allKeys containsObject:@"noncestr"]) {
-        JX_BLOCK_EXEC(self.onRespCallBack, JXWechatPayFailure, @"missing \"noncestr\".");
-        return;
+    else if (![reqDic.allKeys containsObject:@"noncestr"]) {
+        failureMsg = @"missing \"noncestr\".";
     }
-    if (![reqDic.allKeys containsObject:@"timestamp"]) {
-        JX_BLOCK_EXEC(self.onRespCallBack, JXWechatPayFailure, @"missing \"timestamp\".");
-        return;
+    else if (![reqDic.allKeys containsObject:@"timestamp"]) {
+        failureMsg = @"missing \"timestamp\".";
     }
-    if (![reqDic.allKeys containsObject:@"package"]) {
-        JX_BLOCK_EXEC(self.onRespCallBack, JXWechatPayFailure, @"missing \"package\".");
-        return;
+    else if (![reqDic.allKeys containsObject:@"package"]) {
+        failureMsg = @"missing \"package\".";
     }
-    if (![reqDic.allKeys containsObject:@"sign"]) {
-        JX_BLOCK_EXEC(self.onRespCallBack, JXWechatPayFailure, @"missing \"sign\".");
+    else if (![reqDic.allKeys containsObject:@"sign"]) {
+        failureMsg = @"missing \"sign\".";
+    }
+    
+    if (failureMsg) {
+        JX_BLOCK_EXEC(self.payResultCallback, JXWechatPayResultFailure, failureMsg);
+        self.payResultCallback = nil;
         return;
     }
     
+    //
     PayReq* req             = [[PayReq alloc] init];
     req.partnerId           = reqDic[@"partnerid"];
     req.prepayId            = reqDic[@"prepayid"];
@@ -119,7 +121,7 @@ static JXWechatPayManager *singleton_;
     else if ([resp isKindOfClass:[PayResp class]]) {
         switch (resp.errCode) {
             case WXSuccess: {
-                !self.onRespCallBack ? : self.onRespCallBack(JXWechatPaySuccess, resp.errStr);
+                JX_BLOCK_EXEC(self.payResultCallback, JXWechatPayResultSuccess, resp.errStr);
             } break;
                 
             case WXErrCodeUserCancel: {
@@ -127,15 +129,15 @@ static JXWechatPayManager *singleton_;
                 if (msg.length == 0) {
                     msg = @"支付取消";
                 }
-                !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayUserCancel, msg);
+                JX_BLOCK_EXEC(self.payResultCallback, JXWechatPayResultUserCancel, msg);
             } break;
                 
             default: {
-                !self.onRespCallBack ? : self.onRespCallBack(JXWechatPayFailure, resp.errStr);
+                JX_BLOCK_EXEC(self.payResultCallback, JXWechatPayResultFailure, resp.errStr);
             } break;
         }
     }
-    self.onRespCallBack = nil;
+    self.payResultCallback = nil;
 }
 
 @end
