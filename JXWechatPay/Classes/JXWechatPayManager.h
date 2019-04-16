@@ -27,7 +27,6 @@ typedef NS_ENUM(NSUInteger, JXWechatPayResult) {
 + (BOOL)wechatInstalled; ///< 是否安装了微信
 + (BOOL)registerApp:(NSString *)appID; ///< 注册微信支付
 
-// 微信跳转回app
 + (BOOL)canHandleOpenURL:(NSURL *)url; ///< 能否处理该 URL
 + (BOOL)handleOpenURL:(NSURL *)url; ///< 处理支付回调 URL
 
